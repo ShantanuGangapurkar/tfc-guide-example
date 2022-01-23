@@ -27,3 +27,13 @@ resource "aws_instance" "ubuntu" {
     "Linux Distribution" = "Ubuntu"
   }
 }
+
+resource "aws_instance" "ubuntu2" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = var.instance_type
+
+  tags = {
+    Name                 = var.instance_name_2
+    "Linux Distribution" = "Ubuntu"
+  }
+}
