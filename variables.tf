@@ -13,3 +13,7 @@ variable "instance_name" {
   default     = "Provisioned by Terraform"
 }
 
+variable "instance_name_2" {
+  description = "EC2 instance name"
+  default     = "Second Terraform"
+}
